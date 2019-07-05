@@ -1,0 +1,38 @@
+{
+  "name": "front_end_engineering",
+  "version": "1.0.0",
+  "description": "透视前端工程化",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack",
+    "dev": "webpack-dev-server --open",
+    "test:unit": "",
+    "test:e2e": ""
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.5.0",
+    "@babel/preset-env": "^7.5.0",
+    "babel-loader": "^8.0.6",
+    "css-loader": "^3.0.0",
+    "eslint": "^6.0.1",
+    "html-webpack-plugin": "^3.2.0",
+    "node-sass": "^4.12.0",
+    "postcss-loader": "^3.0.0",
+    "postcss-preset-env": "^6.6.0",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.1",
+    "stylelint": "^10.1.0",
+    "url-loader": "^2.0.1",
+    "vue-loader": "^15.7.0",
+    "vue-template-compiler": "^2.6.10",
+    "webpack": "^4.35.2",
+    "webpack-cli": "^3.3.5",
+    "webpack-dev-server": "^3.7.2"
+  },
+  "dependencies": {
+    "vue": "^2.6.10",
+    "vue-router": "^3.0.7"
+  }
+}
