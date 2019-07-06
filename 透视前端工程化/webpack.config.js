@@ -9,6 +9,19 @@ module.exports = {
         filename: '[name].js',
         path: path.resolve(__dirname, 'dist')
     },
+    devServer: {
+        contentBase: path.join(__dirname, 'dist'),
+        port: 8089,
+        hot: true,
+        open: true,
+        compress: true,
+        overlay: true
+    },
+    devtool: "eval-source-map",
+    mode: 'development',
+    // proxy: {
+
+    // },
     module: {
         rules: [
             {
@@ -73,7 +86,8 @@ module.exports = {
     plugins: [
         new VueLoaderPlugin(),
         new HtmlWebpack({
-            template: './public/index.html'
+            template: './public/index.html',
+            title: '项目模板'
         })
     ]
 }

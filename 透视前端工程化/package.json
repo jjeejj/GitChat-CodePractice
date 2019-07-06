@@ -4,7 +4,7 @@
   "description": "透视前端工程化",
   "main": "index.js",
   "scripts": {
-    "build": "webpack",
+    "build": "webpack --watch",
     "dev": "webpack-dev-server --open",
     "test:unit": "",
     "test:e2e": ""
