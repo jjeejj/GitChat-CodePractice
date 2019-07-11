@@ -32,6 +32,7 @@
     "webpack-dev-server": "^3.7.2"
   },
   "dependencies": {
+    "connect-multiparty": "^2.2.0",
     "vue": "^2.6.10",
     "vue-router": "^3.0.7"
   }
