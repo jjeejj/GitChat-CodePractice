@@ -1,17 +1,24 @@
-const { app, BrowserWindow } = require('electron');
+const { app, BrowserWindow, remote } = require('electron');
+// const { dialog } = remote;
+
+// console.log('dialog', dialog);
 
 let win = null;
 function createWindow () {
     // 创建浏览器窗口
     win = new BrowserWindow({
         width: 800,
-        height: 600
+        height: 600,
+        webPreferences: {
+            nodeIntegration: true
+        }
+
     });
     var n = 20;
     console.log(n);
     // 加载 index.html 文件
-    win.loadFile('./index.html');
-
+    // win.loadFile('./index.html');
+    win.loadFile('./dialog.html');
     win.on('closed', () => {
         console.log('closed');
         win = null;
