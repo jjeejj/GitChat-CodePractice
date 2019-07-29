@@ -53,3 +53,27 @@ function onClick_MultiSelection() {
         message: '选择多个文件和目录',
     });
 };
+
+function onClick_Save() {
+    const label = document.getElementById('label');
+    label.innerText = dialog.showSaveDialog({
+        properties: ['openFile', 'openDirectory', 'multiSelections'],
+        title: '保存文件',
+        buttonLabel: '保存',
+        defaultPath: '.',
+        filters: [
+            {name: '图像文件', extensions: ['jpg', 'png', 'gif']},
+            {name: '视频文件', extensions: ['mkv', 'avi', 'mp4']},
+            {name: '音频文件', extensions: ['mp3','wav']},
+            {name: '所有文件', extensions: ['*']}
+        ]
+    });
+};
+
+function onClick_MessageBox () {
+    const label = document.getElementById('label');
+    label.innerText = dialog.showMessageBox({
+        title: '保存文件',
+        message: '这是消息提示框'
+    });
+}
