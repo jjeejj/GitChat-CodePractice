@@ -1,0 +1,14 @@
+{
+  "name": "mqtt-start",
+  "version": "1.0.0",
+  "description": "> 课程连接: [https://gitbook.cn/gitchat/column/5be4f4df2c33167c317beb8c/](https://gitbook.cn/gitchat/column/5be4f4df2c33167c317beb8c/)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "mqtt": "^3.0.0"
+  }
+}
